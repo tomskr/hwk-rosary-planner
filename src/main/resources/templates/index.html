@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Rosary Planner main Page</title>
+</head>
+<body>
+    <!--/*@thymesVar id="noteSet" type="java.util.Set"*/-->
+    <!--/*@thymesVar id="note" type="fatimska.rosary.planner.domain.Note"*/-->
+    <h1>News</h1>
+    <div class="panel-body">
+        <div class="table-responsive" th:if="${not #sets.isEmpty(noteSet)}">
+            <table class="table table-hover ">
+                <thead class="thead-inverse">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Article</th>
+                    <th>Date</th>
+                </tr>
+                </thead>
+                <tr th:remove="all">
+                    <td>123</td>
+                    <td>Tasty Goodnees 1</td>
+                    <td>View</td>
+                    <td>12-09-2019</td>
+                </tr>
+                <tr th:remove="all">
+                    <td>12333</td>
+                    <td>Tasty Goodnees 2</td>
+                    <td>View</td>
+                    <td>12-09-2019</td>
+                </tr>
+                <tr th:each="note : ${noteSet}">
+                    <td th:text="${note.id}">334</td>
+                    <td th:text="${note.title}">Tasty Goodnees 3</td>
+                    <td th:text="${note.article}">Article</td>
+                    <td th:text="${note.date}">12-09-2019</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

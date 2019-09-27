@@ -1,1 +1,2 @@
 INSERT INTO NOTES (TITLE, ARTICLE, CREA_DATE) VALUES ('Hello', 'This is Hello World Article', '2008-10-29');
+INSERT INTO NOTES (TITLE, ARTICLE, CREA_DATE) VALUES ('GoodBye', 'GoodBye World', '2008-09-10');

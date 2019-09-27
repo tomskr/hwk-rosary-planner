@@ -1,0 +1,23 @@
+h1 {
+    color: black;
+    margin-left: 17%;
+}
+.note-panel{
+    border: 5px solid #f1f1f1;
+    margin: 40px 5%;
+    width: 500px;
+}
+
+.head-panel{
+    margin-left: 30px;
+    font-size: 20px;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    background: url("pictures/rosary.jpg") no-repeat;
+    background-size: contain;
+    background-position-x: right;
+}

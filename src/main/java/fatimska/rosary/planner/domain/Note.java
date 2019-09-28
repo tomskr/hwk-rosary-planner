@@ -1,6 +1,5 @@
 package fatimska.rosary.planner.domain;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -23,7 +22,6 @@ public class Note {
     @Column(name="ARTICLE")
     private String article;
 
-    @JsonFormat(pattern="yyyy-MM-dd")
     @Column(name="CREA_DATE")
     private Date date;
 }

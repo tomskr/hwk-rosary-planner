@@ -4,6 +4,8 @@ h1 {
 }
 .note-panel{
     border: 5px solid #f1f1f1;
+    border-radius: 30px;
+    padding: 10px;
     margin: 40px 5%;
     width: 500px;
 }
@@ -17,7 +19,7 @@ html{
 }
 body{
     min-height: 100%;
-    background: url("pictures/rosary.jpg") no-repeat;
+    background: #fad893 url("../pictures/rosary.jpg") no-repeat right top;
     background-size: contain;
-    background-position-x: right;
+
 }
